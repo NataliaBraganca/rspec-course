@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 class Card
-  attr_reader :rank, :suit
+  attr_accessor :rank, :suit
 
   def initialize(rank, suit)
     @rank = rank
@@ -9,13 +9,19 @@ class Card
 end
 
 RSpec.describe Card do
+  let(:card) { Card.new("Ace", "Spades") }
+
+
   it 'has a rank' do
-    card = Card.new("Ace", "Spades")
     expect(card.rank).to eq('Ace')
   end
 
   it 'has a suite' do
-    card = Card.new("Ace", "Spades")
     expect(card.suit).to eq("Spades")
+  end
+
+  it 'has a custom error message' do
+    comparison = "Spades"
+    expect(card.suit).to eq(comparison)
   end
 end
