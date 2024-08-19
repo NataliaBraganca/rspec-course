@@ -23,3 +23,8 @@ RSpec.describe ProgrammingLanguage do
     end
   end
 end
+
+=begin
+Anything that's defined at a higher level scope, in other words, in a higher level block is going
+to be available to every child or nested scope within it.
+=end
