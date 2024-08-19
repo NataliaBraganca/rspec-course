@@ -1,34 +1,34 @@
-RSpec.describe "nested hooks" do
+# frozen_string_literal: true
+
+RSpec.describe 'nested hooks' do
   before(:context) do
-    puts "OUTER Before context"
+    puts 'OUTER Before context'
   end
   before(:example) do
-    puts "OUTER Before example"
+    puts 'OUTER Before example'
   end
 
-  it "does bacis math" do
+  it 'does bacis math' do
     expect(1 + 1).to eq(2)
   end
 
-  context "with condition A" do
+  context 'with condition A' do
     before(:context) do
-      puts "INNER Before context"
+      puts 'INNER Before context'
     end
 
     before(:example) do
-      puts "INNER Before example"
+      puts 'INNER Before example'
     end
 
-    it "does some more basic math" do
+    it 'does some more basic math' do
       expect(1 + 1).to eq(2)
     end
 
-    it "does subtraction as well" do
+    it 'does subtraction as well' do
       expect(5 - 3).to eq(2)
     end
   end
 end
 
-=begin
- all outer, all outer level befores are also going to be valid in inner level
-=end
+#  all outer, all outer level befores are also going to be valid in inner level

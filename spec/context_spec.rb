@@ -1,4 +1,6 @@
-RSpec.describe "#even? method" do
+# frozen_string_literal: true
+
+RSpec.describe '#even? method' do
   describe 'with even number' do
     it 'should return true' do
       expect(4.even?).to eq(true)
