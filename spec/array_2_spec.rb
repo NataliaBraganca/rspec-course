@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
-
-
 RSpec.describe Array do
-  subject(:sally) {  [1, 2]  }
+  subject(:sally) {  [1, 2] }
 
   it 'caches the object within an example' do
     expect(subject.length).to eq(2)
