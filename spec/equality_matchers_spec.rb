@@ -57,3 +57,6 @@ end
 
 #Equality checks if The two things are equal and identity that checks the two things are the same object, literally the same object in memory.
 # So we have EQ, which is just the values we have, EQL, which is the values and a type. And we have equal, the full word spelled out which checks for identity and equal is the same thing as be.
+
+#== e eql? comparam o valor ou conteúdo dos objetos.
+# equal? compara a identidade do objeto, verificando se são exatamente a mesma instância.
