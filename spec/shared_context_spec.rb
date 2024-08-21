@@ -36,9 +36,7 @@ RSpec.describe 'second example in different file' do
     expect(some_variable).to eq([1, 2, 3])
   end
 end
-=begin
-Maybe objects have a similar interface, so shared examples allows us to extract the common examples
-to a shared example group and shared context allows us to extract the common business logic and the
-setup code to again a similar outside block that is usually declared in an external file that is then
-imported.
-=end
+# Maybe objects have a similar interface, so shared examples allows us to extract the common examples
+# to a shared example group and shared context allows us to extract the common business logic and the
+# setup code to again a similar outside block that is usually declared in an external file that is then
+# imported.
