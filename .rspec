@@ -1,3 +1,3 @@
 --require spec_helper
---require 'bundler/setup'
---require 'rspec'
+#--require 'bundler/setup'
+# --require 'rspec'

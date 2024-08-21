@@ -1,7 +1,5 @@
-# frozen_string_literal: true
-
 RSpec.describe 'comparison matchers' do
-  it 'allows for comparison with built-in Ruby operators' do
+  it "allows for comparison with built-in Ruby operators" do
     expect(10).to be > 5
     expect(8).to be < 15
 
