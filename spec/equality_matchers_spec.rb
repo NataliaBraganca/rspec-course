@@ -60,3 +60,8 @@ end
 
 #== e eql? comparam o valor ou conteúdo dos objetos.
 # equal? compara a identidade do objeto, verificando se são exatamente a mesma instância.
+
+# eq = checks only value
+# eql = checks value and type
+# equal = object identity
+#
