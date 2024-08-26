@@ -6,7 +6,6 @@
 # construct yourself. But when you really don't care about the order and you just want to check for inclusion
 # of certain elements or all elements within an array you can use contain. Exactly.
 
-
 RSpec.describe 'contain_exacly matcher' do
   subject { [1, 2, 3] }
 
