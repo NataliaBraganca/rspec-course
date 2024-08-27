@@ -18,12 +18,12 @@ RSpec.describe 'satisfy_matcher' do
   end
 end
 
-#We talked about the satisfy matcher.
+# We talked about the satisfy matcher.
 #  This will allow us to create whatever custom assertions or expectations you want in Ruby and spec.
 # So if there's something that's missing from the R spec library, you can obviously hound them on GitHub and
 # annoy them or you can define something that fits your custom business needs.
 
-#All you have to do is use the two method, provide the satisfy matcher, give it a string argument that
+# All you have to do is use the two method, provide the satisfy matcher, give it a string argument that
 #  describes the business logic of what you expect to be or to happen or to exist.
 #  And then to the block you write your own custom set of implementation logic, and this doesn't have
 #  to be a one liner.
