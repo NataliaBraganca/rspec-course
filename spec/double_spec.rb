@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-
+# A double is a mock object that stands in for a real object in a test suite.
 # Well, to mock means to emulate something or to replace a real thing with a simulated version of it.
 # We're going to be talking about a new method in R-spec called the double. And what a double creates for us is a test double.
 # And a test double is basically just an object that can respond to any variety of methods that we define on it.
@@ -38,3 +38,4 @@ end
 #  We don't need to define a class to do this right. We don't need to define some complexity.
 # We can literally use our specs double feature to create this object for us that can basically conform
 # to whatever methods we want it to have.
+
