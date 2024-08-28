@@ -33,11 +33,11 @@ class Movie
   end
 
   def start_shooting
-    return unless actor.ready?
-
+    if actor.ready?
     actor.act
     actor.fall_off_ladder
     actor.light_on_fire
+    end
   end
 end
 
@@ -70,3 +70,15 @@ RSpec.describe Movie do
     end
   end
 end
+
+#We created a stuntman double that had the exact same public interface as our valid actor object.
+# We then passed that double object in to our initialize method for our movie, so we allowed our double
+# to take the place of a real life actor object and skip over all the complexities that make an actor,
+#  an actor skip over all the complex business logic and the internal implementations in favor of simply
+#  having an object to just give us automatic return values.
+# This speeds up the specs and it creates a wall of separation between the movie class and the actor class.
+# So now the movie class can simply test itself.
+# It can assume it's going to have an actor or an actor like object that's going to respond to a certain method.
+# And all we tested is that when we call the movie's interface, which is start shooting, that it talks
+# successfully to that actor and gives it the proper commands and lets the actor take care of that logic.
+# That is the only responsibility that the movie has.
